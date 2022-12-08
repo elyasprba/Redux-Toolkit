@@ -20,7 +20,7 @@ function App() {
       <div className="App">
         <h1>Redux Toolkit</h1>
         <Select options={region} name="color" key={region && region[0].value} />
-        <h1>TES</h1>
+        <h1>TES1</h1>
       </div>
     </>
   );
