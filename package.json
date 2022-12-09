@@ -15,9 +15,11 @@
     "react-bootstrap": "^2.7.0",
     "react-data-table-component": "^7.5.3",
     "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
     "react-redux": "^8.0.5",
     "react-scripts": "5.0.1",
     "react-select": "^5.6.1",
+    "reactstrap": "^9.1.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
