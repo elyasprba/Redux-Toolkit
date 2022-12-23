@@ -1,13 +1,19 @@
 import React from "react";
+import { User } from "react-feather";
 
 function Navbar() {
   return (
     <>
-      <nav className="navbar bg-light">
-        <div className="container">
-          <h3 className="text-center">React Query</h3>
+      <div className="pt-3">
+        <div className="card mx-5">
+          <div className="card-body">
+            <div className="d-flex justify-content-end gap-4">
+              <div className="fw-semibold">Elyas Purba Prastiya</div>
+              <User />
+            </div>
+          </div>
         </div>
-      </nav>
+      </div>
     </>
   );
 }
