@@ -3,7 +3,17 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 import Loading from "../Loading/loading";
 
-function ModalDetail({ toggle, modal, isFetching, id }) {
+function ModalDetail({
+  toggle,
+  modal,
+  isFetching,
+  id,
+  name,
+  status,
+  species,
+  type,
+  image,
+}) {
   return (
     <>
       <Modal isOpen={modal} toggle={toggle}>
@@ -12,50 +22,50 @@ function ModalDetail({ toggle, modal, isFetching, id }) {
         </ModalHeader>
         <ModalBody>
           {isFetching ? (
-            <Loading />
+            <div className="text-center">
+              <Loading />
+            </div>
           ) : (
             <table>
               <tbody>
                 <tr>
                   <th>ID</th>
                   <td>
-                    <span className="px-5">{id}</span>
+                    <span className="px-5">: {id}</span>
                   </td>
                 </tr>
                 <tr>
-                  <th>SourceSystem</th>
+                  <th>Name</th>
                   <td>
-                    <span className="px-5"></span>
+                    <span className="px-5">: {name}</span>
                   </td>
                 </tr>
                 <tr>
-                  <th>MessageType</th>
+                  <th>Status</th>
                   <td>
-                    <span className="px-5"></span>
+                    <span className="px-5">: {status}</span>
                   </td>
                 </tr>
                 <tr>
-                  <th>CampaignName</th>
+                  <th>Species</th>
                   <td>
-                    <span className="px-5"></span>
+                    <span className="px-5">: {species}</span>
                   </td>
                 </tr>
                 <tr>
-                  <th>StartActiveDate</th>
+                  <th>Type</th>
                   <td>
-                    <span className="px-5"></span>
+                    <span className="px-5">
+                      : {type ? type : "Tidak ada type"}
+                    </span>
                   </td>
                 </tr>
                 <tr>
-                  <th>EndtActiveDate</th>
+                  <th>Image</th>
                   <td>
-                    <span className="px-5"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th>AccountName</th>
-                  <td>
-                    <span className="px-5"></span>
+                    <a href={image} className="px-5">
+                      : {image}
+                    </a>
                   </td>
                 </tr>
               </tbody>

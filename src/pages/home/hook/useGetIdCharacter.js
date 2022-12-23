@@ -3,7 +3,7 @@ import { getCharacterIdApi } from "../../../api/api";
 
 export const useGetCharacterId = (id) => {
   return useQuery({
-    queryKey: ["characterid"],
+    queryKey: ["characterid", id],
     queryFn: () => getCharacterIdApi(id),
   });
 };

@@ -1,9 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import { getCharacterApi } from "../../../api/api";
 
-export const useGetCharacter = () => {
+export const useGetCharacter = (name) => {
   return useQuery({
-    queryKey: ["character"],
-    queryFn: () => getCharacterApi(),
+    queryKey: ["character", name],
+    queryFn: () => getCharacterApi(name),
+    retry: false,
   });
 };
