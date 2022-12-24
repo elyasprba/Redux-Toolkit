@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ReactTable from "../../component/reactTable";
+import { Button, Input, Label } from "reactstrap";
 import { ExternalLink, Search } from "react-feather";
-import { Button } from "reactstrap";
-import Navbar from "../../component/navbar";
 
+import Navbar from "../../component/navbar";
+import ReactTable from "../../component/reactTable";
 import ModalDetail from "../../component/modalDetail";
 
 import { useGetCharacter } from "./hook/useGetCharacter";
@@ -89,19 +89,16 @@ export default function Home() {
           </div>
         </div>
         <div className="card-body">
-          <div className="row">
+          <div className="row pb-2">
             <div className="col-lg-3">
-              <div className="form-floating mb-3">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  placeholder="Search Name"
-                  value={filter}
-                  onChange={handleChange}
-                />
-                <label htmlFor="name">Name</label>
-              </div>
+              <Input
+                type="text"
+                id="name"
+                placeholder="Search Name"
+                value={filter}
+                onChange={handleChange}
+              />
+              <Label htmlFor="name"></Label>
             </div>
             <div className="col-lg-3">
               <Button
