@@ -1,6 +1,6 @@
 # Redux Toolkit, React Query and React Data Table
 
-<img src="./src/assets/mobile.png" alt="page" width="250" />
+<img src="./src/assets/mobile.png" alt="page" width="450" />
 <div>
 </br>
 </div>
