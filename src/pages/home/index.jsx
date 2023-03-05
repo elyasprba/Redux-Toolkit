@@ -84,7 +84,7 @@ export default function Home() {
           style={{
             backgroundColor: "#0462A7",
           }}>
-          <div className="card-title fw-bold fs-4 text-white">
+          <div className="card-title-cypress fw-bold fs-4 text-white">
             React Data Table
           </div>
         </div>
