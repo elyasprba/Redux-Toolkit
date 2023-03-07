@@ -8,7 +8,9 @@ function Navbar() {
         <div className="card mx-5">
           <div className="card-body">
             <div className="d-flex justify-content-end gap-4">
-              <div className="fw-semibold">Elyas Purba Prastiya</div>
+              <div className="navbar-cypress fw-semibold">
+                Elyas Purba Prastiya
+              </div>
               <User />
             </div>
           </div>
